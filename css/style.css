@@ -403,6 +403,8 @@ body{
     color: #fff;
     background-color: #0066ff;
     padding: 4px 20px;
+    width: 80px;
+    height: 30px;
 }
 
 .showmore__link{
@@ -420,6 +422,9 @@ body{
     padding: 100px 0 150px;
 }
 
+.tabs{
+    margin-bottom: 70px;
+}
 .tabs__btn{
     padding: 0 150px 100px;
     display: flex;
@@ -436,7 +441,7 @@ body{
     padding: 0;
 }
 
-.tabs__btn-item-active{
+.tabs__btn-item--active{
     color: #0066ff;
 }
 
@@ -487,4 +492,79 @@ body{
     color:#0066FF;
     border: 1px solid #0066FF;
     border-top: 0;
+}
+
+
+
+
+.menu__btn{
+    width: 30px;
+    height: 20px;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__btn span{
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 1180px){
+    .importlant__list{
+        gap: 30px 20px;
+    }
+    .importlant__iten-img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px){
+    .video__content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px){
+    .menu__btn{
+        display: flex;
+    }
+
+    .menu__btn,
+    .logo{
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu__list{
+        position: absolute;
+        z-index: 5;
+        background-color: #151515;
+        flex-direction: column; 
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;        
+        padding-top: 200px;
+        height: 100vh;
+        transform: translateY(-100%);
+    }
+    .menu__list.menu__list-active{
+        transform: translateY(0%);
+    }
+
+    .why-lease__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .importlant__list{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
