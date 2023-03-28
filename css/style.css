@@ -369,6 +369,7 @@ body{
     font-weight: 400;
     padding: 13px 61px;
     margin: 0 auto;
+    border: none;
 }
 
 .blog{
@@ -515,6 +516,10 @@ body{
     width: 100%;
 }
 
+.card__img{
+    width: 100%;
+}
+
 @media (max-width: 1180px){
     .importlant__list{
         gap: 30px 20px;
@@ -522,11 +527,18 @@ body{
     .importlant__iten-img{
         width: 100%;
     }
+    .tabs__content-item{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 1040px){
     .video__content{
         width: 100%;
+    }
+    .tabs__btn{
+        padding: 0 0 50px;
+        gap: 20px;
     }
 }
 
@@ -564,6 +576,9 @@ body{
     .importlant__list{
         grid-template-columns: repeat(2,1fr);
     }
+    .tabs__content-item{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px){
@@ -591,14 +606,37 @@ body{
         text-align: center;
     }
 }
+@media (max-width: 650px){
+    .tabs__content-item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tabs__btn-item {
+        font-size: 18px;
+    }
+    .blog__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacts{
+        padding: 50px 0;
+    }
+    .form__input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contacts__text{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+}
 
 @media (max-width: 540px){
     .title {
-        font-size: 60px;
+        font-size: 45px;
     }
     .top__link {
-        max-width: 360px;
-        font-size: 24px;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 12px;
     }
     .swiper-pagination-bullet{
         width: 35px;
@@ -645,5 +683,30 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }   
+    .blog__item-title{
+        margin-bottom: 10px;
     }
+    .blog__item-link{
+        margin-left: auto;
+    }
+    .tabs__btn{
+        flex-direction: column;
+    }
+    .choose {
+        padding: 50px 0;
+    }
+    .tabs__content-item{
+        gap: 40px;
+    }
+    .blog {
+        padding-bottom: 50px;
+    }
+    .tabs {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 440px){
+
 }
